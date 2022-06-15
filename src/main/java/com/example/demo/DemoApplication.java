@@ -22,6 +22,6 @@ public class DemoApplication implements CommandLineRunner {
 		String url = "chat@4&g=Y";
 		Pattern pattern = Pattern.compile("[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\\.[a-zA-Z]{2,3}");
 		Matcher matcher = pattern.matcher(url);
-		log.info("find : readme {} : {}", matcher.find(), matcher.toMatchResult());
+		log.info("find : {} : {}", matcher.find(), matcher.toMatchResult());
 	}
 }
